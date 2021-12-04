@@ -5,9 +5,9 @@ This directory contains all the puzzles solved in C for the Advent of Code 2015 
 ## Version
 
 Developed on a Mac with Apple's clang tools.  
-Reference version: `Apple clang version 12.0.5 (clang-1205.0.22.9)`
+Reference version: `Apple clang version 12.0.5 (clang-1205.0.22.9)`.
 
-## Compilation
+## Commands
 
 - `make` to compile all puzzles
 - `make run` to run all binaries at once

@@ -4,13 +4,14 @@ This directory contains all the puzzles solved in [Python](https://www.python.or
 
 ## Version
 
-Solving is made in `Python 3` >= 3.6.
+Developed on a Mac with `python`/`pylint` packages contained in [brew](https://brew.sh/).  
+Reference version: `Python 3.9.9`.
 
-## Compilation
+## Commands
 
-N/A
+- `make run` to run all sources at once
 
 ## Miscellaneous
 
-Modules are assumed to be executed at the root of this README (e.g. `python3 01/part_one.py`).  
-All sources have been passed to `pylint`.
+Sources are assumed to be executed at the root of this README (e.g. `python3 01/part_one.py`).  
+All sources have been passed to `pylint` for quality check.
