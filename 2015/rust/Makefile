@@ -15,7 +15,7 @@ $(BINS) : $(SRCS)
 run:
 	@for x in $(BINS);         \
 	do                         \
-	    echo '=> Running' $$x; \
+		echo '=> Running' $$x; \
 		./$$x;                 \
 	done;
 

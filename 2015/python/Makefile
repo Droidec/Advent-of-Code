@@ -6,6 +6,6 @@ SRCS = $(wildcard */*.py)
 run:
 	@for x in $(SRCS);         \
 	do                         \
-	    echo '=> Running' $$x; \
+		echo '=> Running' $$x; \
 		python3 $$x;           \
 	done;
