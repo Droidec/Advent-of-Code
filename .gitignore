@@ -1,0 +1,8 @@
+*.o
+*.so
+*.gv
+*.pdf
+*.pyc
+*.pyo
+.vscode/
+.DS_Store
