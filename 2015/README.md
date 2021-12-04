@@ -26,7 +26,7 @@ For example:
 To what floor do the instructions take Santa?
 
 <details>
-    <summary>**Expected answer:**</summary>
+    <summary><strong>Expected answer:</strong></summary>
     138
 </details>
 
@@ -41,6 +41,6 @@ For example:
 What is the position of the character that causes Santa to first enter the basement?
 
 <details>
-    <summary>**Expected answer:**</summary>
+    <summary><strong>Expected answer:</strong></summary>
     1771
 </details>
