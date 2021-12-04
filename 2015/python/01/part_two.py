@@ -23,5 +23,5 @@ if __name__ == '__main__':
                 print(f"Basement is reached at position '{index+1}'")
                 sys.exit(0)
 
-    print("The basement was never reached?")
+    sys.stderr.write("The basement was never reached?\n")
     sys.exit(1)

@@ -4,7 +4,7 @@ Advent of Code 2015 day 01 part one
 
 import sys
 
-INPUT_FILE = "../../inputs/01-input.txt"
+INPUT_FILE = "../inputs/01-input.txt"
 
 if __name__ == '__main__':
     floor = 0

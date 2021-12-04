@@ -1,5 +1,5 @@
 /******************************************************************************
- * Advent of Code 2015 day 01 part one
+ * Advent of Code 2015 day 01 part two
  *****************************************************************************/
 
 #include <stdio.h> // fopen, fclose, fgetc, printf, fprintf
@@ -37,11 +37,18 @@ int main()
                 fclose(file);
                 exit(EXIT_FAILURE);
         }
+
+        if (floor == -1)
+        {
+            printf("Basement is reached at position '%u'\n", index + 1);
+            fclose(file);
+            exit(EXIT_SUCCESS);
+        }
+
         index++;
     }
 
-    printf("The right floor is '%d'\n", floor);
-
+    fprintf(stderr, "The basement was never reached?\n");
     fclose(file);
-    exit(EXIT_SUCCESS);
+    exit(EXIT_FAILURE);
 }

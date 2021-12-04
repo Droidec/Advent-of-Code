@@ -1,10 +1,22 @@
+# Compiler
 CC = gcc
-CFLAGS = -Wall
-SOURCES = $(wildcard */*.c)
-BIN_REP = bin
-BIN = $(SOURCES:.c=)
+# Compilation flags
+CFLAGS = -Wall -Wextra -Werror
+# All sources
+SRCS = $(wildcard */*.c)
+# All binaries (substitution reference)
+BINS = $(SRCS:.c=)
 
-all : $(BIN)
+.PHONY: all run clean
 
-clean :
-	rm -rf $(BIN)
+all: $(BINS)
+
+run:
+	@for x in $(BINS);         \
+	do                         \
+	    echo '=> Running' $$x; \
+		./$$x;                 \
+	done;
+
+clean:
+	rm -rf $(BINS)

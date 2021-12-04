@@ -9,5 +9,10 @@ Reference version: `Apple clang version 12.0.5 (clang-1205.0.22.9)`
 
 ## Compilation
 
-- `make` to compile all puzzles in a `bin` folder
+- `make` to compile all puzzles
+- `make run` to run all binaries at once
 - `make clean` to clean all binaries
+
+## Miscellaneous
+
+Binaries are assumed to be executed at the root of this README (e.g. `./01/part_one`).

@@ -12,4 +12,5 @@ N/A
 
 ## Miscellaneous
 
+Modules are assumed to be executed at the root of this README (e.g. `python3 01/part_one.py`).  
 All sources have been passed to `pylint`.
