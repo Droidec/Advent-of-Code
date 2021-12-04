@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 Advent of Code 2015 day 01 part one
 """

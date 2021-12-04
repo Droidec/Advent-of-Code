@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 Advent of Code 2015 day 01 part one
 """
@@ -22,4 +21,7 @@ if __name__ == '__main__':
 
             if floor == -1:
                 print(f"Basement is reached at position '{index+1}'")
-                break
+                sys.exit(0)
+
+    print("The basement was never reached?")
+    sys.exit(1)

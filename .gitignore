@@ -4,5 +4,6 @@
 *.pdf
 *.pyc
 *.pyo
+**/bin
 .vscode/
 .DS_Store

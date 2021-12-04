@@ -1,6 +1,6 @@
 # Advent of Code 2015 in Python
 
-This directory contains all the puzzles solved for the Advent of Code 2015 event in [Python](https://www.python.org/).  
+This directory contains all the puzzles solved in [Python](https://www.python.org/) for the Advent of Code 2015 event.
 
 ## Version
 
