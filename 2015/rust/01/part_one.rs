@@ -18,8 +18,8 @@ fn main() {
     let mut index = 0;
 
     loop {
-        let n = reader.read(&mut buffer).expect("read failed");
-        if n == 0 {
+        let num_bytes = reader.read(&mut buffer).expect("read failed"); // Read 1 byte
+        if num_bytes == 0 {
             break; // EOF
         }
 
@@ -34,7 +34,7 @@ fn main() {
             _ => panic!("Invalid character found at position '{}'", index + 1),
         };
 
-        index += 1;
+        index += num_bytes;
     }
 
     println!("The right floor is '{}'", floor);
