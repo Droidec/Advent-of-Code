@@ -3,26 +3,40 @@
  */
 
 use std::fs::File; // File::open
-use std::io::Read; // read_to_string
+use std::io::BufReader; // BufReader::new
+use std::io::Read; // read
+use std::process; // process::exit
 
 // String slice constant
 const INPUT_FILE: &str = "../inputs/01-input.txt";
 
 fn main() {
-    let mut file = File::open(INPUT_FILE).expect(&format!("Failed to open file '{}'", INPUT_FILE));
-    let mut buffer = String::new();
+    let file = File::open(INPUT_FILE).expect(&format!("Failed to open file '{}'", INPUT_FILE));
+    let mut reader = BufReader::new(file); // optimize reading
+    let mut buffer = [0; 1];
     let mut floor = 0;
+    let mut index = 0;
 
-    // TODO: we should read byte per byte instead
-    file.read_to_string(&mut buffer).expect("read_to_string failed");
+    loop {
+        let n = reader.read(&mut buffer).expect("read failed");
+        if n == 0 {
+            break; // EOF
+        }
 
-    for (index, ch) in buffer.chars().enumerate() {
-        match ch {
+        let inst = match std::str::from_utf8(&buffer) {
+            Ok(ch) => ch,
+            Err(_) => panic!("Invalid UTF-8 character found at position '{}'", index + 1),
+        };
+
+        match inst.chars().next().unwrap() {
             '(' => floor += 1,
             ')' => floor -= 1,
-            _ => panic!("Invalid character found at position {}", index + 1),
+            _ => panic!("Invalid character found at position '{}'", index + 1),
         };
+
+        index += 1;
     }
 
-    println!("The right floor is {}", floor);
+    println!("The right floor is '{}'", floor);
+    process::exit(0);
 }
