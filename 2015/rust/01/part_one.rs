@@ -13,6 +13,7 @@ fn main() {
     let mut buffer = String::new();
     let mut floor = 0;
 
+    // TODO: we should read byte per byte instead
     file.read_to_string(&mut buffer).expect("read_to_string failed");
 
     for (index, ch) in buffer.chars().enumerate() {
