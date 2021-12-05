@@ -9,7 +9,7 @@ BINS = $(SRCS:.rs=)
 
 all: $(BINS)
 
-$(BINS) : $(SRCS)
+% : %.rs
 	$(RUSTC) $< -o $@
 
 run:

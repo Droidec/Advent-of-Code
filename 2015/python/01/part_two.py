@@ -1,5 +1,5 @@
 """
-Advent of Code 2015 day 01 part one
+Advent of Code 2015 day 01 part two
 """
 
 import sys
@@ -23,8 +23,8 @@ if __name__ == '__main__':
                     sys.stderr.write(f"Invalid character found at position '{index+1}'\n")
                     sys.exit(1)
                 if floor == -1:
-                        print(f"Basement is reached at position '{index+1}'")
-                        sys.exit(0)
+                    print(f"Basement is reached at position '{index+1}'")
+                    sys.exit(0)
                 index += 1
     except IOError as e:
         sys.stderr.write(f"{e}\n")
