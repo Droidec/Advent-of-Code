@@ -12,8 +12,7 @@ if __name__ == '__main__':
     try:
         with open(INPUT_FILE, 'r', encoding='UTF-8') as file:
             for line in file:
-                l, w, h = line.split('x')
-                l, w, h = int(l), int(w), int(h)
+                l, w, h = [int(dim) for dim in line.split('x')]
                 s1 = l * w
                 s2 = l * h
                 s3 = w * h

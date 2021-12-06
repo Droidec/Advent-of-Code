@@ -2,7 +2,7 @@
  * Advent of Code 2015 day 01 part one
  */
 
-#include <stdio.h> // fopen, fclose, fgetc, printf, fprintf
+#include <stdio.h> // fopen, fclose, fgetc, fprintf, printf
 #include <stdlib.h> // exit
 
 #define INPUT_FILE "../inputs/01-input.txt"
