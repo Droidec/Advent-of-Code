@@ -9,9 +9,7 @@ if __name__ == '__main__':
     value = 1
     while True:
         seed = key + str(value)
-        md5 = hashlib.md5(seed.encode())
-        md5_hash = md5.hexdigest()
-
+        md5_hash = hashlib.md5(seed.encode()).hexdigest()
         if md5_hash.startswith('00000'):
             break
         value += 1
