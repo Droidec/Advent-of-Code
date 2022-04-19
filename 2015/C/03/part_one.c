@@ -10,7 +10,6 @@
 
 int main()
 {
-    unsigned int houses = 1;
     char buffer[BUFFER_SIZE + 1] = {0};
     FILE *file = fopen(INPUT_FILE, "r");
 
